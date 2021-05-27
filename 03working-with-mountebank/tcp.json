@@ -1,0 +1,23 @@
+{
+    "port": 3001,
+    "protocol": "tcp",
+    "mode": "text",
+    "stubs": [
+      {
+        "name": "hello",
+        "predicates": [
+        ],
+        "responses": [
+          {
+            "is": {
+              "data": "Hello"
+            },
+            "_behaviors": {
+                "decorate": "function (request, response, logger) { console.log(request); response.data += \", \" + request.data; }"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
