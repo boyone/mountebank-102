@@ -1,0 +1,5 @@
+{
+  "foo": {
+    "createCommand": "node ./index.js"
+  }
+}
