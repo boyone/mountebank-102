@@ -1,0 +1,23 @@
+{
+    "port": 3000,
+    "protocol": "tcp",
+    "mode": "text",
+    "stubs": [
+      {
+        "name": "hello",
+        "predicates": [
+        ],
+        "responses": [
+          {
+            "is": {
+              "data": "Hello"
+            },
+            "_behaviors": {
+                "decorate": "function (request, response, logger) { response.data = \"Hello, \" + request.data; }"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,34 @@
+{
+  "port": 3000,
+  "protocol": "http",
+  "stubs": [
+    {
+      "name": "hello",
+      "predicates": [
+        {
+          "equals": {
+            "method": "get"
+          }
+        },
+        {
+          "equals": {
+            "path": "/"
+          }
+        }
+      ],
+      "responses": [
+        {
+          "is": {
+            "statusCode": 200,
+            "body": {
+              "message": "สวัสดีชาวโลก"
+            },
+            "headers": {
+              "Content-Type": "application/json"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
